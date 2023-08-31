@@ -31,6 +31,13 @@ public class ArrList<E> {
     return true;
   }
 
+  public int contain(E e) {
+    for(int i = 0; i < size; ++i) {
+      if(e == a[i]) return i;
+    }
+    return -1;
+  }
+
   public boolean add(E e, int idx) {
     if(idx > size && idx < 0) {
       throw new IndexOutOfBoundsException();

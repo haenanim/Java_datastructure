@@ -13,6 +13,9 @@ public class LinkedListTest {
     list.add(node2);
     list.add(node3);
 
-    System.out.println(list.getNowNode().getNext().getItem());
+    System.out.println(list.toString());
+//    for (int i = 0; i < list.getSize(); ++i) {
+//      System.out.println(list.next().getItem());
+//    }
   }
 }
